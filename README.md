@@ -1,16 +1,13 @@
-### Hi there 👋
+# GitHub README picture generation infrastructure
 
-<!--
-**mads2/mads2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+The animated SVGs you see [on my profile](https://github.com/dtinth) are
+generated from code in this branch. They are server-rendered
+([powered by Vercel](https://vercel.com/docs/runtimes#official-runtimes/node-js)),
+which means it’s possible to render dynamic content here.
 
-Here are some ideas to get you started:
+## Development
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```sh
+yarn
+yarn vercel dev
+```
