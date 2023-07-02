@@ -1,7 +1,10 @@
-### Hi there 👋
+<img src="https://mads2.vercel.app/Hello.svg"><br>
+<img src="https://mads2.vercel.app/Marquee.svg"><br>
 
 <!--
-**mads2/mads2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Hi there 👋
+**mads2/mads2** is a ✨ _special_ ✨ repository because 
+its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
