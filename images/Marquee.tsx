@@ -1,14 +1,14 @@
 import React from 'react'
-import { css, Arimo, WaitFor } from '../lib'
+import { css, Arimo, Rubik } from '../lib'
 
 export function Marquee() {
   let text =
-    'welcome to my GitHub profile, thanks for visiting! click on each image to see the source code that generates it.'
+    'Bem Vindo! Herzlich Willkommen! Benvinguda! 歡迎! Bienvenido! Vitajte! Bienvenue! Maligayang pagdating! Tervetuloa! Välkommen! Ласкаво просимо!.'
   const textOptions = {
     anchor: 'left middle',
     fontSize: 36,
   }
-  const metrics = Arimo.getMetrics(text, textOptions)
+  const metrics = Rubik.getMetrics(text, textOptions)
   const totalWidth = metrics.width + 720
   const scrollSpeedPixelsPerSecond = 128
   const totalTimeToScroll = totalWidth / scrollSpeedPixelsPerSecond
@@ -38,7 +38,7 @@ export function Marquee() {
       <style type="text/css">{style}</style>
       <g id="text">
         <g transform="translate(0 36)">
-          <path id="hello" d={Arimo.getD(text, textOptions)} fill="currentColor" />
+          <path id="hello" d={Rubik.getD(text, textOptions)} fill="currentColor" />
         </g>
       </g>
     </svg>

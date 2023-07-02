@@ -14,3 +14,7 @@ export const Arimo = TextToSVG.loadSync(
 export const Cousine = TextToSVG.loadSync(
   require.resolve('typeface-cousine/files/cousine-latin-400.woff')
 )
+
+export const Rubik = TextToSVG.loadSync(
+  require.resolve('typeface-rubik-cyrillic/rubik-v8-cyrillic_latin-500.woff')
+)

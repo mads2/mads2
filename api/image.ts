@@ -1,7 +1,7 @@
-import { NowRequest, NowResponse } from '@vercel/node'
+import { VercelRequest, VercelResponse } from '@vercel/node'
 import { renderImage } from '../images'
 
-export default async function (req: NowRequest, res: NowResponse) {
+export default async function (req: VercelRequest, res: VercelResponse) {
   try {
     const result = await renderImage(String(req.query.name))
     res.setHeader('Content-Type', 'image/svg+xml')

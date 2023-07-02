@@ -1,5 +1,5 @@
 import React from 'react'
-import { css, ArimoBold, HitCounter } from '../lib'
+import { css, ArimoBold } from '../lib'
 
 export function Hello() {
   const style = css`
@@ -73,27 +73,6 @@ export function Hello() {
         opacity: 1;
       }
     }
-    #hits {
-      animation: 1s hits linear;
-      animation-fill-mode: both;
-    }
-    @keyframes hits {
-      0% {
-        opacity: 0;
-      }
-      10% {
-        opacity: 1;
-      }
-      64% {
-        transform: scale(1);
-        animation-timing-function: ease-in;
-        opacity: 1;
-      }
-      100% {
-        transform: scale(0.001);
-        opacity: 1;
-      }
-    }
   `
   return (
     <svg
@@ -106,10 +85,10 @@ export function Hello() {
       <style type="text/css">{style}</style>
       <defs>
         <g id="box1">
-          <Box a="#353433" b="#656463" c="#8B8685" />
+          <Box a="#8B8225" b="#399433" c="#353883" />
         </g>
         <g id="box2">
-          <Box a="#353433" c="#656463" b="#8B8685" />
+          <Box a="#313413" c="#456423" b="#8B66F5" />
         </g>
       </defs>
       <rect width="100%" height="100%" fill="#353433" />
@@ -146,18 +125,11 @@ export function Hello() {
           <g id="revolve">
             <g transform="translate(960 540) rotate(-14)">
               <g id="transition">
-              <path
-                  id="hello"
-                  d={ArimoBold.getD('Welcome', {
-                    anchor: 'center middle',
-                    fontSize: 480,
-                  })}
-                />
                 <path
-                  id="Bem vindos"
-                  d={ArimoBold.getD('Welcome', {
+                  id="hello"
+                  d={ArimoBold.getD('mads2', {
                     anchor: 'center middle',
-                    fontSize: 280,
+                    fontSize: 640,
                   })}
                 />
                 <use xlinkHref="#hello" x="-8" y="-8" fill="#d7fc70" />
@@ -171,11 +143,6 @@ export function Hello() {
               </g>
             </g>
           </g>
-        </g>
-      </g>
-      <g transform="translate(960 540)">
-        <g id="hits">
-          <HitCounter />
         </g>
       </g>
     </svg>
